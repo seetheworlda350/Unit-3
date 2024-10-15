@@ -16,23 +16,49 @@ public class Main {
         // ClassName.methodName(); e.g. Math.random()
         // ClassName.staticVariableName(); e.g. Math.PI
 
+        double myPI = Math.PI;
+        System.out.println(myPI);
+
         // abs
+        int num1 = -2;
+        int absValue = Math.abs(num1);
+        System.out.println(absValue);
 
         // pow
+        double num2 = Math.pow(3,5);
+        System.out.println(num2);
 
         // sqrt
 
-
+        double num3 = Math.sqrt(80);
+        System.out.println(num3);
+        System.out.println(Math.pow(num3,2));
 
         //create a random number in the range [0,1)
+        double random1 = Math.random();
+        System.out.println(random1);
 
         //create a random number in the range [0, n)
+        //example: [0,6)
+        int n = 6;
+        double random2 = Math.random() * n;
+        System.out.println(random2);
+        // create a random number in the range [0, p]
+        int p = 6;
+        double random3 = (int)(Math.random() * p+1);
 
-        // create a random number in the range [0,n]
+        System.out.println(random3);
 
-        // create a random number in the range [m,n]
+        // FOR HOMEWORK
+
+        // 1) create a random number in the range [m,n]
 
 
+        // 2) create a random negative integer in the range [-m,0]
+
+        // 3) create a random negative integer in the range [-m,-n]
+
+        // 4) create a random negative integer in the range [-m,n]
 
         //using the Random Class
         //This is not static so we have to create a Random object
