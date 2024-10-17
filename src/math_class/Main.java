@@ -50,8 +50,10 @@ public class Main {
         //For Homework (you can make up m and n values)
 
         // 1) create a random integer in the range [m,n]
+        // (int)(Math.random()*(n-m+1)+m)
 
         // 2) create a random negative integer in the range [-m,0]
+        // (int)(Math.random()*(-m-1))
 
         // 3) create a random negative integer in the range [-m,-n]
 
@@ -67,10 +69,22 @@ public class Main {
         //This is not static so we have to create a Random object
 
         //create a Random object
+        Random randObj = new Random();
 
         //get int with and without bound
+        int randInt = randObj.nextInt();
+        System.out.println(randInt);
+
+        //with bound
+        int randIntSmaller = randObj.nextInt(100);
+        System.out.println(randIntSmaller);
 
         // get double
+        double randDouble = randObj.nextDouble(); //between 0 and 1
+        System.out.println(randDouble);
+
+        double randDoubleTwo = randObj.nextDouble(50,100);
+        System.out.println(randDoubleTwo); //between 50 and 100, uses RandomGenerator Interface
 
 
 
