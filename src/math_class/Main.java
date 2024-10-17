@@ -59,7 +59,7 @@ public class Main {
 
         // 2) create a random negative integer in the range [-m,0]
         int negM = -7;
-        int random5 = (int)(Math.random() * negM+1);
+        int random5 = (int)(Math.random() * negM-1);
         System.out.println(random5);
 
         // 3) create a random negative integer in the range [-m,-n]
