@@ -52,26 +52,27 @@ public class Main {
         // FOR HOMEWORK
 
         // 1) create a random number in the range [m,n]
-        int m = 5;
+        int m = 3;
         int n1 = 10;
-        double random4 = (Math.random() * (n1-m+1)+m);
+        int random4 = (int)(Math.random() * (n1-m+1)+m);
         System.out.println(random4);
 
         // 2) create a random negative integer in the range [-m,0]
-        int negM = -2;
-        double random5 = (Math.random() * negM+1);
+        int negM = -7;
+        int random5 = (int)(Math.random() * negM+1);
         System.out.println(random5);
 
         // 3) create a random negative integer in the range [-m,-n]
         int negN = -5;
         int negM1 = -10;
-        double random6 = (Math.random() * (negM1-negN+1)+negN);
+        int random6 = (int)(Math.random() * (negM1-negN+1)+negN);
         System.out.println(random6);
 
         // 4) create a random negative integer in the range [-m,n]
         int negM2 = -5;
         int n2 = 10;
-        double random7 = (Math.random() * (n2-negM2+1)+negM2);
+        int random7 = (int)(Math.random() * (n2-negM2+1)+negM2);
+        System.out.println(random7);
 
         //using the Random Class
         //This is not static so we have to create a Random object
