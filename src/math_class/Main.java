@@ -78,10 +78,22 @@ public class Main {
         //This is not static so we have to create a Random object
 
         //create a Random object
+        Random randObj = new Random();
 
         //get int with and without bound
+        int randInt = randObj.nextInt();
+        System.out.println(randInt);
+
+        //with bound
+        int randIntSmaller = randObj.nextInt(100);
+        System.out.println(randIntSmaller);
 
         // get double
+        double randDouble = randObj.nextDouble(); // between 0 and 1
+        System.out.println(randDouble);
+
+        double randDoubleTwo = randObj.nextDouble()*100+50; // between 50 and 100
+        System.out.println(randDoubleTwo);
 
 
 
