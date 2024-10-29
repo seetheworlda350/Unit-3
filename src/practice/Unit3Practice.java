@@ -1,12 +1,14 @@
 package practice; //don't change this
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Unit3Practice {
     public static void main(String[] args) {
         //remove the // to run the methods
 
-        //problemOne();
-        problemTwo();
+        problemOne();
+        //problemTwo();
     }
 
     public static void problemOne(){
@@ -19,7 +21,22 @@ public class Unit3Practice {
         System.out.println("Please enter a third whole number");
         int num3 = input.nextInt();
         System.out.println("Here are your numbers printed in ascending order");
-        if(num1 < num2 && num1 < num3){
+        ArrayList numbers = new ArrayList<>();
+        ArrayList revNumbers = new ArrayList<>();
+        numbers.add(num1);
+        numbers.add(num2);
+        numbers.add(num3);
+        numbers.sort(null);
+        System.out.println("Here are your numbers printed in ascending order: ");
+        System.out.println(numbers);
+        revNumbers.add(num1);
+        revNumbers.add(num2);
+        revNumbers.add(num3);
+        revNumbers.sort(null);
+        Collections.reverse(revNumbers);
+        System.out.println("Here are your numbers printed in descending order: ");
+        System.out.println(revNumbers);
+        /*if(num1 < num2 && num1 < num3){
             System.out.print(num1 + " ");
             if(num2 < num3){
                 System.out.print(num2 + " " + num3);
@@ -64,7 +81,7 @@ public class Unit3Practice {
             } else {
                 System.out.print(num2 + " " + num1);
             }
-        }
+        }*/
 
     }
 
