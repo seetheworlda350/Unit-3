@@ -7,7 +7,7 @@ public class Unit3Practice {
     public static void main(String[] args) {
         //remove the // to run the methods
 
-        problemOne();
+        //problemOne();
         //problemTwo();
     }
 
@@ -36,52 +36,6 @@ public class Unit3Practice {
         Collections.reverse(revNumbers);
         System.out.println("Here are your numbers printed in descending order: ");
         System.out.println(revNumbers);
-        /*if(num1 < num2 && num1 < num3){
-            System.out.print(num1 + " ");
-            if(num2 < num3){
-                System.out.print(num2 + " " + num3);
-            } else {
-                System.out.print(num3 + " " + num2);
-            }
-        } else if(num2 < num1 && num2 < num3){
-            System.out.print(num2 + " ");
-            if(num1 < num3){
-                System.out.print(num1 + " " + num3);
-            } else {
-                System.out.print(num3 + " " + num1);
-            }
-        } else {
-            System.out.print(num3 + " ");
-            if(num1 < num2){
-                System.out.print(num1 + " " + num2);
-            } else {
-                System.out.print(num2 + " " + num1);
-            }
-        }
-        System.out.println(" " );
-        System.out.println("Here are your numbers printed in descending order");
-        if(num1 > num2 && num1 > num3){
-            System.out.print(num1 + " ");
-            if(num2 > num3){
-                System.out.print(num2 + " " + num3);
-            } else {
-                System.out.print(num3 + " " + num2);
-            }
-        } else if(num2 > num1 && num2 > num3){
-            System.out.print(num2 + " ");
-            if(num1 > num3){
-                System.out.print(num1 + " " + num3);
-            } else {
-                System.out.print(num3 + " " + num1);
-            }
-        } else {
-            System.out.print(num3 + " ");
-            if(num1 > num2){
-                System.out.print(num1 + " " + num2);
-            } else {
-                System.out.print(num2 + " " + num1);
-            }
-        }*/
 
     }
 
